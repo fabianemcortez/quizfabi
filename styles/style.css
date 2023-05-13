@@ -1,0 +1,141 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap);
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* .all {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding: 30px;
+  justify-content: space-evenly;
+  flex-direction: row;
+  background-color: #6961f5;
+}
+
+img {
+  width: 380px;
+  height: auto;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+}
+
+.left p.um {
+  font-family: Helvetica, sans-serif;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: 100;
+  font-size: 18px;
+}
+
+h1 {
+  font-family: Poppins;
+  color: #ffffff;
+  font-weight: 300;
+  font-size: 80px;
+}
+
+.left p.dois {
+  font-family: Helvetica, sans-serif;
+  color: #ffffff;
+  font-weight: 100;
+  font-size: 18px;
+}
+
+.button1 {
+  background-color: #ffffff;
+  margin-top: 12px;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  font-family: Helvetica, sans-serif;
+}
+
+.h1-dois {
+  font-size: 24px;
+  font-family: Poppins;
+  color: #3F3D56;
+}
+
+.left-dois {
+  display: flex;
+  font-weight: 600;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 34px;
+}
+
+.all-dois {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding: 30px;
+  justify-content: space-evenly;
+  flex-direction: row;
+  background-color: #ffffff;
+}
+
+.resposta {
+  background-color: #ffffff;
+  color: #3F3D56;
+  border-radius: 8px;
+  border-color: #CACACA;
+  padding: 16px 20px;
+  font-size: 16px;
+  box-shadow: none;
+  text-decoration: none;
+  text-align: left;
+  width: 466px;
+
+} */
+.btn-default {
+  width: 466px;
+  height: 59px;
+  border: 1px solid #CACACA;
+  background-color: #ffffff;
+  border-radius: 8px;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+}
+
+.btn-wrong {
+  width: 466px;
+  height: 59px;
+  border: 1px solid #f21a1a;
+  background-color: #fddddd;
+  border-radius: 8px;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+}
+
+.btn-rigth {
+  width: 466px;
+  height: 59px;
+  border: 1px solid #29B170;
+  background-color: #DFF4EA;
+  border-radius: 8px;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+}
+
+.btn-next {
+  
+}
+
+.show {
+  display: flex;
+}
+
+.hide {
+  display: none !important
+}
+
+/* DEIXAR CLASSES DE CTAS ERRADO E CERTO */
+/* CRIAR BOTAO DE CONTINUAR */
