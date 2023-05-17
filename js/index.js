@@ -41,7 +41,6 @@ let question3 = {
   img: "./imgs/foto3.png",
 };
 
-
 //aqui eu guardo minahs perguntas
 const questions = [question1, question2, question3];
 
@@ -59,6 +58,7 @@ startButton.addEventListener("click", () => {
 
 let index = 0;
 let points = 0;
+let buttons = [op1, op2, op3, op4];
 
 function startGame() {
   geralQuestion.innerText = questions[index].pergunta;
@@ -67,7 +67,7 @@ function startGame() {
   op2.classList.remove("btn-rigth", "btn-wrong");
   op3.classList.remove("btn-rigth", "btn-wrong");
   op4.classList.remove("btn-rigth", "btn-wrong");
-  
+
   op1.innerText = questions[index].op1;
   op2.innerText = questions[index].op2;
   op3.innerText = questions[index].op3;
@@ -78,7 +78,6 @@ function startGame() {
 
 op1.addEventListener("click", () => {
   console.log("Cliquei na primeira opção");
-  verificarResposta(op1.innerText);
   const result = verificarResposta(op1.innerText);
   console.log(result);
 
@@ -87,6 +86,12 @@ op1.addEventListener("click", () => {
   }
   if (result === false) {
     op1.classList.add("btn-wrong");
+    //adicionar a classe na resposta certa
+    buttons.forEach((button) => {
+      if (button.innerText === questions[index].resposta) {
+        button.classList.add("btn-rigth");
+      }
+    });
   }
 });
 
@@ -100,6 +105,12 @@ op2.addEventListener("click", () => {
   }
   if (result === false) {
     op2.classList.add("btn-wrong");
+    buttons.forEach((button) => {
+      if (button.innerText === questions[index].resposta) {
+        button.classList.add("btn-rigth");
+      }
+    });
+    
   }
 });
 
@@ -113,6 +124,11 @@ op3.addEventListener("click", () => {
   }
   if (result === false) {
     op3.classList.add("btn-wrong");
+    buttons.forEach((button) => {
+      if (button.innerText === questions[index].resposta) {
+        button.classList.add("btn-rigth");
+      }
+    });
   }
 });
 
@@ -126,6 +142,11 @@ op4.addEventListener("click", () => {
   }
   if (result === false) {
     op4.classList.add("btn-wrong");
+    buttons.forEach((button) => {
+      if (button.innerText === questions[index].resposta) {
+        button.classList.add("btn-rigth");
+      }
+    });
   }
 });
 

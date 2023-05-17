@@ -15,36 +15,38 @@
   </head>
   <body>
     <main>
-      <div id="homeScreen" class="show d-flex align-items-center">
-        <div class="container d-flex align-items-center bg-danger" ali>
+      <div id="homeScreen" class="show homeScreen align-items-center">
+        <div class="d-flex">
+        <div class="align-items-center">
           <p class="projeto">PROJETO I</p>
           <h1 class="ArtQuiz">Art Quiz</h1>
-          <p class="Nome">Fabiane Moreno Cortez</p>
-          <button id="btnPrimary" class="btn-primary">Começar</button>
+          <p class="Nome">Fabiane M. Cortez</p>
+          <button id="btnPrimary" class="btn-continue d-flex ">Começar <img src="./imgs/" alt=""></button>
+        </div>
         </div>
 
         <div>
-          <img src="./imgs/img-home.png" alt="" />
+          <img src="./imgs/img-home.png" alt="" class="img-home"/>
         </div>
       </div>
 
-      <div id="question" class="hide d-flex">
-        <div>
-          <h1 id="geralQuestion"></h1>
+      <div id="question" class="hide d-flex question">x
+        <div class="container">
+          <h2 id="geralQuestion"></h2>
           <button id="op1" class="btn-default"></button>
           <button id="op2" class="btn-default"></button>
           <button id="op3" class="btn-default"></button>
           <button id="op4" class="btn-default"></button>
-          <button id="next" class="hide btn-next">Continuar</button>
+          <button id="next" class="hide btn-continue">Continuar</button>
         </div>
         <div class="img">
-          <img src="" alt="" id="img" />
+          <img src="" alt="" id="img" class="img-question"/>
         </div>
       </div>
 
-      <div id="result" class="hide">
-        <img src="" alt="" />
-        <p id="resultTxt"></p>
+      <div id="result" class="hide resultDiv">
+        <img src="./imgs/check.png" alt="" class="check" />
+        <p id="resultTxt" class="resultTxt"></p>
       </div>
     </main>
 
@@ -58,9 +60,4 @@
   </body>
 </html>
 
-<!-- Qual a lógica da construção das páginas? -->
-<!-- Como eu faço para construir as 4 pags do quiz no mesmo html? -->
-<!-- Como faço para linkar esse projeto com o git -->
-<!-- /* Como colocar fontes diferentes no texto */
-/* Como mudar a cor de dentro do botão */
-/* Como colocar a setinha dentro do botão de "Começar" */ -->
+
