@@ -15,9 +15,9 @@ let question1 = {
   pergunta: "Quem pintou “O grito”?",
   op1: "Tarsila do Amaral",
   op2: "Di Cavalcanti",
-  op3: "Monet",
-  op4: "Vincent van Gogh",
-  resposta: "Monet",
+  op3: "Edvard Munch",
+  op4: "Vincent Van Gogh",
+  resposta: "Edvard Munch",
   img: "./imgs/foto1.png",
 };
 
@@ -173,7 +173,7 @@ nextButton.addEventListener("click", () => {
     questionDiv.classList.add("hide");
     resultDiv.classList.remove("hide");
     if (points === 0) {
-      resultTxt.innerText = `Você marcou ${points} ponto, continue estudando`;
+      resultTxt.innerText = `Você marcou ${points} pontos, continue estudando`;
     }
     if (points === 1) {
       resultTxt.innerText = `Você marcou ${points} ponto, continue estudando`;
